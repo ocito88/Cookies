@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body { text-align: center; font-family: Arial; }
+        div { display: inline-block; margin: 10px; width: 100px; height: 100px; border-radius: 10px; background: darkred; }
+        span { display: block; margin: 10px; padding: 30px; border-radius: 5px; background: #ffde59; }
+        .g { background: green; }
+    </style>
+</head>
+<body>
+    <div><span>Title</span></div><br>
+    <div><span>Step 1</span></div><div><span>Step 2</span></div><div><span>Step 3</span></div><br>
+    <div class="g"><span>Pic 1</span></div><div class="g"><span>Pic 2</span></div><div class="g"><span>Pic 3</span></div>
+</body>
+</html>
