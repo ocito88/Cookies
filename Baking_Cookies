@@ -1,16 +1,94 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steps and Pics Layout</title>
     <style>
-        body { text-align: center; font-family: Arial; }
-        div { display: inline-block; margin: 10px; width: 100px; height: 100px; border-radius: 10px; background: darkred; }
-        span { display: block; margin: 10px; padding: 30px; border-radius: 5px; background: #ffde59; }
-        .g { background: green; }
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Title Style */
+        .title {
+            background-color: red;
+            color: black;
+            padding: 20px;
+            margin: 10px auto;
+            display: inline-block;
+            border-radius: 10px;
+        }
+
+        .title h1 {
+            background-color: yellow;
+            margin: 0;
+            padding: 10px 30px;
+            border-radius: 5px;
+        }
+
+        /* Steps and Pics Containers */
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 20px auto;
+            flex-wrap: wrap;
+        }
+
+        .step, .pic {
+            background-color: red;
+            color: black;
+            padding: 10px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .step-content, .pic-content {
+            background-color: yellow;
+            padding: 20px 30px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        /* Pic Colors */
+        .pic {
+            background-color: green;
+        }
     </style>
 </head>
 <body>
-    <div><span>Title</span></div><br>
-    <div><span>Step 1</span></div><div><span>Step 2</span></div><div><span>Step 3</span></div><br>
-    <div class="g"><span>Pic 1</span></div><div class="g"><span>Pic 2</span></div><div class="g"><span>Pic 3</span></div>
+    <!-- Title -->
+    <div class="title">
+        <h1>Title</h1>
+    </div>
+
+    <!-- Steps Section -->
+    <div class="container">
+        <div class="step">
+            <div class="step-content">Step 1</div>
+        </div>
+        <div class="step">
+            <div class="step-content">Step 2</div>
+        </div>
+        <div class="step">
+            <div class="step-content">Step 3</div>
+        </div>
+    </div>
+
+    <!-- Pics Section -->
+    <div class="container">
+        <div class="pic">
+            <div class="pic-content">Pic 1</div>
+        </div>
+        <div class="pic">
+            <div class="pic-content">Pic 2</div>
+        </div>
+        <div class="pic">
+            <div class="pic-content">Pic 3</div>
+        </div>
+    </div>
 </body>
 </html>
